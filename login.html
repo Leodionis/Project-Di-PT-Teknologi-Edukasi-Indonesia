@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Bekerja</title>
+    <link rel="stylesheet" href="regis.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo.png" alt="Belajar Bekerja">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#program">Program</a></li>
+                    <li><a href="#biaya">Biaya</a></li>
+                    <li><a href="#komunitas">Komunitas</a></li>
+                    <li><a href="#faqs">FAQs</a></li>
+                    <li><a href="#tentang">Tentang</a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <button class="login" onclick="document.getElementById('loginModal').style.display='block'">Login</button>
+                    <button class="register">Daftar Akun</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="form-container">
+            <h1>Selamat Datang di Belajar Bekerja.</h1>
+            <p><a href="register.html">Buat akun sekarang</a> atau login dengan akunmu jika sudah terdaftar 📥</p>
+            <form method="post" action="cek_login.php">
+                <label for="email">E-mail Aktif</label>
+                <input type="email" id="email" name="email" placeholder="Masukkan email terdaftar" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Masukkan password" required>
+
+                <div class="checkbox-container">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">Saya setuju dengan <a href="#">syarat dan ketentuan</a> dari Belajar Bekerja.</label>
+                </div>
+
+                <div class="recaptcha-container">
+                    <!-- Add the sitekey in data-sitekey attribute here -->
+                    <div class="g-recaptcha" data-theme="light" data-size="normal"
+                    data-callback="captchaVerified" data-expired-callback="captchaExpired"
+                    data-sitekey="6Lcaxp0cAAAAABMM86u1fSTluQtYtnWhsMt1S9rp">
+                </div>
+                </div>
+
+                <button type="submit" name="login">login Akun</button>
+            </form>
+        </div>
+        <div class="image-container">
+            <img src="img/login.png" alt="Belajar Bekerja">
+        </div>
+    </div>
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <footer>
+        <div id="tentang" class="footer-container">
+            <div class="footer-content">
+                <div class="footer-company">
+                    <img src="img/icon-footer.png" alt="icon">
+                    <strong>Headquarter</strong>
+                    <p>Jl. Nama jalan, Blok nama blok, nomor bangunan dan sebagainya kode pos 00000</p>
+                    <div class="footer-company-contact">
+                        <div class="contact-img">
+                            <img src="img/icon/wa.png" alt="">
+                        </div>
+                        <div class="contact-content">
+                            <strong>Whatsapp</strong>
+                            <p>+62 812 1234 567</p>
+                        </div>
+                    </div>
+                    <div class="footer-company-contact">
+                        <div class="contact-img">
+                            <img src="img/icon/email.png" alt="">
+                        </div>
+                        <div class="contact-content">
+                            <strong>Email</strong>
+                            <p>cs@belajarbekerja.com</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Jam pelayanan konsumen</p>
+                        <p>(09:00 - 17.00 WIB)</p>
+                    </div>
+                </div>
+                <div class="footer-produk">
+                    <p class="footer-title">Produk</p>
+                    <div class="footer-produk-content">
+                        <p>Project Based Industry (PBI)</p>
+                        <p>Job Connector</p>
+                        <p>Aplikasi Segera!</p>
+                    </div>
+                </div>
+                <div class="footer-about">
+                    <p class="footer-title">Perusahaan</p>
+                    <div class="footer-about-content">
+                        <p>Tentang Kami</p>
+                        <p>Newsroom</p>
+                        <p>Visi Kami</p>
+                        <p>Hubungi Kami</p>
+                        <p>Pusat Bantuan</p>
+                    </div>
+                </div>
+                <div class="footer-sumber-daya">
+                    <p class="footer-title">Sumber Daya</p>
+                    <div class="footer-sumber-daya-content">
+                        <p>Kenapa Belajar Bekerja?</p>
+                        <p>Update tentang program</p>
+                        <p>Gabung Komunitas</p>
+                        <p>Blog</p>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <p class="footer-title">Media Sosial</p>
+                    <div class="footer-social-content">
+                        <div class="footer-social-img">
+                            <img src="img/icon/ig.png" alt="">
+                            <p>Instagram</p>
+                        </div>
+                        <div class="footer-social-img">
+                            <img src="img/icon/x.png" alt="">
+                            <p>X / Twitter</p>
+                        </div>
+                        <div class="footer-social-img">
+                            <img src="img/icon/linkedin-fill.png" alt="">
+                            <p>Linkedin</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-payment">
+                    <p class="footer-title">Metode Pembayaran</p>
+                    <div class="footer-payment-content">
+                        <div class="partner-payment">
+                            <p>Partner</p>
+                            <img src="img/icon/midtrans.png" alt="icon">
+                        </div>
+                        <div class="credit-card-payment">
+                            <p>Kartu Kredit</p>
+                            <div class="credit-card-grid">
+                                <img src="img/icon/visa.png" alt="icon">
+                                <img src="img/icon/mastercard.png" alt="icon">
+                            </div>
+                        </div>
+                        <div class="bank-payment">
+                            <p>Bank Transfer</p>
+                            <div class="bank-grid">
+                                <img src="img/icon/BCA.png" alt="icon">
+                                <img src="img/icon/BNI.png" alt="icon">
+                                <img src="img/icon/BRI.png" alt="icon">
+                                <img src="img/icon/gopay.png" alt="icon">
+                                <img src="img/icon/jenius.png" alt="icon">
+                                <img src="img/icon/lainnya.png" alt="icon">
+                            </div>
+                        </div>
+                        <div class="qris-payment">
+                            <p>QRIS</p>
+                            <img src="img/icon/QRIS.png" alt="icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-lisensi-container">
+            <div class="footer-border"></div>
+            <div class="footer-lisensi">
+                <p>Lisensi</p>
+                <p>Syarat & Ketentuan</p>
+                <p>Privasi</p>
+                <p>Cookies</p>
+                <p>Penggunaan Data</p>
+            </div>
+            <div class="footer-company-credit">
+                <p>© 2024 Belajar Bekerja. All right reserved</p>
+                <p>Belajar Bekerja merupakan program untuk mempersiapkan individu 
+                    menjadi lebih siap secara profesional. Dimana peserta dapat mengerjakan
+                    kasus nyata yang terjadi di dunia industri dengan memanfaatkan pemahaman
+                    digital transformasi serta teknologi Kecerdasan Buatan (AI) yang
+                    langsung didampingi oleh praktisi berpengalaman. Pada program ini semua
+                    orang memiliki kesempatan untuk berpengalaman di industri!
+                </p>
+            </div>
+        </div>
+    </footer>
